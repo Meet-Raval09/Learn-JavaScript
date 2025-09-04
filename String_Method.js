@@ -26,4 +26,15 @@ let newstr2 = " MeetRaval "
 // Concat():
 let str_o = "Meet"
 let str_t = "Raval"
-console.log(str_o.concat(str_t))
+//console.log(str_o.concat(str_t))
+
+
+// charAt : Matching the Given Character In String.
+//const newstr = "Meetraval";
+//const matchcharat = newstr.charAt(2);
+//console.log(matchcharat);
+
+// IndexOf : give the charcter of the given index in a string.
+let newstr_one = "ElonMusk";
+const letinchar = newstr_one.indexOf("k");
+console.log(letinchar)
