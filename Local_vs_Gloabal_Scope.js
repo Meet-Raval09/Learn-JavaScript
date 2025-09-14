@@ -1,10 +1,22 @@
 // Global Vs Local Scope In JavaScript.
 let a = 20
-console.log("The Value of A Is : " + a);
+//console.log("The Value of A Is : " + a);
 
+// Local Scope
 {
  a = 30;
- console.log("The Value of A Is : " + a);
+ //console.log("The Value of A Is : " + a);
  let b = 50;
- console.log("The Value of B Is : " + b);
+ //console.log("The Value of B Is : " + b);
 }
+
+function one(){
+ const username = "meet";
+ function two(){
+  const website = "youtube";
+  console.log(username);
+ }
+ //console.log(website);
+ two();
+}
+one();

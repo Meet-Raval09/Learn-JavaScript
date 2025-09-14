@@ -38,8 +38,33 @@ function PhoneDetails(anyobj){
 //PhoneDetails(PhoneInfo);
 
 // Array In Functions.
-const MyGames = ["Gta","NFS:Most Wanted","Fifa 21","Pubg","Call Of Duty"];
-function GameList(anyarray){
- console.log(`My Favourite Game Is : ${anyarray[1]}!!..`)
+//const MyGames = ["Gta","NFS:Most Wanted","Fifa 21","Pubg","Call Of Duty"];
+//function GameList(anyarray){
+// console.log(`My Favourite Game Is : ${anyarray[1]}!!..`)
+//}
+//GameList(MyGames);
+
+// Arrow Function With This Keyword.
+const user = {
+ username : "Meet",
+ id : 21,
+
+ Showinfo : function(){
+  console.log(`Hello ${this.username} And Your Id Is ${this.id} Welcome To Website!!..`)
+  console.log(this)
+ }
 }
-GameList(MyGames);
+//user.Showinfo();
+user.username = "Elon";
+//user.Showinfo();
+
+// Implicit Return In Arrow Functions.
+//1. Method 1. When You Use () you dont need to use return keyword.but when you use {} you need to use return keyword.
+const addtwo = (a,b) => (a + b);
+const addthree = (a,b,c) => {return a + b + c;}
+
+//console.log(`when use () brakets you dont need to use return keyword.. : ${addtwo(50,50)}`);
+//console.log(`when use {} brakets you need to use return keyword.. : ${addthree(50,50)}`);
+
+const rtnobj = (username) => ({username:"JeffBhau"})
+console.log(`The Object Is : ${rtnobj}!!..`)
