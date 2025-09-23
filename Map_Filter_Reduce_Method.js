@@ -16,7 +16,25 @@ let num_two = [10,30,40,50,100,300,700,900,500]
 // console.log(`The Filtered Values Are ${filtered_num}`)
 
 // Reduce() = Reduce An Array to A Single Value.
-let reduced_num = num_two.reduce((val)=>{
- return val + val * 4
+//let reduced_num = num_two.reduce((val)=>{
+// return val + val * 4
+//})
+//console.log(`The Reduced Num Array Is ${reduced_num}`)
+
+// More Example Of Map,Filter And Reduce Method.
+let MyNum = [10,20,30,40,50,60,70,80,90,100];
+//let NewValue = MyNum.map((val_one,val_two)=>{
+// return val_one + val_two * 10;
+//});
+//console.log(`The Value Of NewValue Of After Map Is ${NewValue}!!..`);
+
+//let FilteredNumValues = MyNum.filter((val)=>{
+// return val > 40;
+//})
+//console.log(`The Filtered Values Are ${FilteredNumValues}!!..`);
+
+let ReducedNumValues = MyNum.reduce((val_one,val_two)=>{
+ return val_one + val_two;
 })
-console.log(`The Reduced Num Array Is ${reduced_num}`)
+
+console.log(`The Reduced Values Are ${ReducedNumValues}!!..`)
