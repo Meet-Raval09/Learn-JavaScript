@@ -33,8 +33,71 @@ let MyNum = [10,20,30,40,50,60,70,80,90,100];
 //})
 //console.log(`The Filtered Values Are ${FilteredNumValues}!!..`);
 
-let ReducedNumValues = MyNum.reduce((val_one,val_two)=>{
- return val_one + val_two;
-})
+//let ReducedNumValues = MyNum.reduce((val_one,val_two)=>{
+// return val_one + val_two;
+//})
 
-console.log(`The Reduced Values Are ${ReducedNumValues}!!..`)
+//console.log(`The Reduced Values Are ${ReducedNumValues}!!..`)
+
+let GameList = [
+ {
+  Game_Name : "Need For Speed : Most Wanted",
+  Publisher : "Electronic Arts",
+  Releasing_Year : 2005,
+  Game_Type : "Racing",
+  Game_Price : 1200
+ },
+ {
+  Game_Name : "Grand Theft Auto : Five",
+  Publisher : "Rockstar Games",
+  Releasing_Year : 2013,
+  Game_Type : "Open World",
+  Game_Price : 6000
+ },
+ {
+  Game_Name : "Forza Horizon 5",
+  Publisher : "Electronic Arts",
+  Releasing_Year :2022,
+  Game_Type : "Racing,Open Cars",
+  Game_Price : 3500
+ },
+ {
+  Game_Name : "Grand Theft Auto : San Andreas",
+  Publisher : "Rockstar Games",
+  Releasing_Year : 2004,
+  Game_Type : "Open World",
+  Game_Price : 4500
+ },
+ {
+  Game_Name : "Red Dead Redemption 2",
+  Publisher : "Rockstar Games",
+  Releasing_Year : 2018,
+  Game_Type : "Action,Adventure",
+  Game_Price : 5000
+ },
+ {
+  Game_Name : "EA : Cricket 2007",
+  Publisher : "Electronic Arts",
+  Releasing_Year : 2007,
+  Game_Type : "Sports,Cricket",
+  Game_Price : 3200
+ }
+]
+//let FiletredGames = GameList.filter((type) => type.Game_Type === "Open World");
+//console.log(FiletredGames)
+
+//let ChangedGameList = GameList.map((type)=>{
+// if(type.Game_Type === "Open World"){
+//   return {...type,Rating:"18+:For Adults Only"}
+// }
+// return type;
+//})
+//console.log(ChangedGameList);
+
+// Array Reduce :
+const arr_one = [1,2,3,4,5];
+const initialVal = 10;
+const SumWithInitialVal = arr_one.reduce((currval,accuval)=>{
+ return currval + accuval},initialVal)
+console.log(`Now Sum With Initial Value Is : ${SumWithInitialVal}`);
+
