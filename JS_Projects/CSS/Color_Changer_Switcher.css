@@ -1,0 +1,52 @@
+body {
+ margin: 0;
+ background-color: #212121;
+ color: white;
+ font-family: sans-serif;
+}
+.main-div{
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ padding-top: 100px;
+ gap: 25px;
+}
+.h1-heading-one{
+ margin-top:30px;
+ font-size: 2rem;
+ color:white;
+}
+.msg-box{
+ margin-top:30px;
+ color: white;
+ font-size: 18px;
+ background-color: #333;
+ padding: 10px 20px;
+ border-radius: 6px;
+ text-align: center;
+}
+.rubiks-look{
+ margin-top:30px;
+ display: grid;
+ grid-template-columns: repeat(2, 80px); /* 2x2 grid */
+ grid-gap: 15px;
+}
+/* Common style for color squares */
+.rubiks-look span {
+ width: 80px;
+ height: 80px;
+ border-radius: 6px;
+ border: 3px solid #111;
+ box-shadow:
+ 0 4px 8px rgba(0, 0, 0, 0.6),
+ inset 0 2px 4px rgba(255, 255, 255, 0.1);
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ cursor: pointer;
+}
+/* Different colors */
+.color-box-one  { background-color: #E53935; } /* red */
+.color-box-two  { background-color: #1E88E5; } /* blue */
+.color-box-three{ background-color: #43A047; } /* green */
+.color-box-four { background-color: #FDD835; } /* yellow */
