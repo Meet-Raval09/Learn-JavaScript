@@ -1,0 +1,65 @@
+body{
+ padding:0px;
+ margin:0px;
+}
+.main-div{
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+ background-color:#212121;
+ color:white;
+}
+.header-one{
+ font-size:35px;
+}
+.title-one{
+ font-size:30px;
+ margin-top:10px;
+}
+.msg-box{
+ margin-top:10px;
+ height:12vh;
+ width:30vh;
+ padding:25px;
+ border:2px solid whitesmoke;
+ border-radius:45px;
+ text-align:center;
+ font-size:18px;
+}
+.u-input{
+ margin-top:20px;
+ width:20vh;
+ border-radius:20px;
+ height:4vh;
+ text-align:center;
+ font-size:15px;
+}
+.u-input::placeholder{
+ text-align:center;
+
+}
+.u-input:focus{
+ outline:none;
+ background-color:none;
+}
+.btn-one{
+ margin-top:25px;
+ height:5vh;
+ width:12vh;
+ padding:15px;
+ border:2px solid white ;
+ border-radius:55px;
+ font-size:20px;
+ text-align:center;
+}
+.no-of-guess{
+ display:flex;
+ margin-top:25px;
+ font-size:20px;
+}
+.mylbl{
+ margin-top:30px;
+ font-size:30px;
+}
