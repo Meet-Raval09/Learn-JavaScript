@@ -1,0 +1,15 @@
+body{
+ margin:0px;
+ padding:0px;
+}
+.project{
+ background-color:#212121;
+ height:100vh;
+ display:flex;
+ justify-content:center;
+}
+.insert{
+ color:white;
+ margin-top:30vh;
+ font-size:45px;
+}
