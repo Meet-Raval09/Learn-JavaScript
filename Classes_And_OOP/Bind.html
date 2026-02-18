@@ -10,6 +10,22 @@
 <body>
 <button>Click Me!!</button>
 <script>
+ class React{
+  constructor(){
+    this.server = "http://localhost:8000";
+    this.package = "React-Native-Main v5.10.5";
+
+    document
+    .querySelector("button")
+    .addEventListener("click",this.TheHandlerClick.bind(this))
+
+  }
+  TheHandlerClick(){
+   alert("The Button Has Been Clicked");
+   console.log(`The Package Used Is: ${this.package} And The Server Is: ${this.server}!!.`);
+  }
+ }
+ const MyApp = new React();
 </script>
 </body>
 </html>

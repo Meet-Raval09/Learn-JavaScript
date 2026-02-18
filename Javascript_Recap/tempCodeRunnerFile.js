@@ -1,0 +1,1 @@
+console.log(hello(10, 20, 30, 40));
