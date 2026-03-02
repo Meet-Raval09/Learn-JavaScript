@@ -1,33 +1,49 @@
-// Variables In Javascript.
-
-//var a = 20;// global variable,can be redeclared and reasigned.
+// variables in javascript.
+//1. Var = var is a globle variable it can redeclared and re-assigned.
+//var a = 10;
 //console.log(a);
 
-//{
-// console.log(a);
-//}
-//a = 30
-//console.log(a);
-
-// let = can not be re-declard but can be re-asigned and it is a block scope variable.
-
-//let a = 30;
-//console.log(a);
-//{
-// let a = 100;
-// console.log(a);
-//}
-//a = 40;
-//console.log(a)
-//let a = 200; it give you a error because let variable cannot be re-declared.
-
-// Const = can not be re-declard and cannot be re-asigned.
-//const a = 100;
+//var a = 100;
 //console.log(a)
 //{
-// const a = 30;
+// var a = 300 ;
 // console.log(a);
 //}
-//a = 500;//this will give you a error because const variable cannot be re-declared.
-//console.log(500);
+//console.log("last value of a",a);
 
+// let = let is a block scope variable it can reassigned but not re-declared.
+//let a = 10;
+//console.log(a);
+//a =300;
+//console.log(a);
+//{
+// let a =500;
+// console.log(a)
+//}
+//console.log(a)
+
+//3. Const = const can not be re-declared or re-aasigned. 
+//const a = 10;
+//console.log(a);
+//a = 30;
+//console.log(a);
+
+// Primitive data type.
+// string ,number,boolean,null,undefined,symbol,bigint.
+
+// primitive memory behaviour.
+//let a = 10;
+//let b = a;
+//b = 100;
+//console.log(b)
+//console.log(a)
+
+// reference Data type.
+// array,object,function,date,map,set,etc.
+
+// Reference Memory Behaviour.
+//let obj = {name:"meet"};
+//let obj_two = obj;
+
+//obj_two.name = "Shiv";
+//console.log(obj.name);
