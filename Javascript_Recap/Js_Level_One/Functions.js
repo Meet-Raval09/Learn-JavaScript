@@ -1,67 +1,62 @@
 //Functions In Javascript.
 
-//1.normal functions.
+//1.Normal functions.
 //function hello(){
 // console.log("Hello World..");
 //}
 //hello();
 
-//2.Arrow Functions.
-//const hi=()=>{
-// console.log("hi");
-//}
-//hi()
-
-// Functions with Parametes.
-//function helloworld(name){
-// return console.log(`${name} Good Morning..`);
-//}
-//helloworld("Meet")//calling a functions with argument.
-
-//var x = 10;
-//console.log(x);
-
-//function a(){
-// var x = 50;
-// console.log(x);
-//}
-
-//function b(){
-// var x = 100;
-// console.log(x);
-//}
-
-// Function Statement.
-//function sayname(){
-// console.log("Meet raval");
-//}
-
-// Function Declaration.
-let fun = function(){
- console.log("Hello Javascript..");
+//2. Function Declaration.
+function greet(name){
+ return "Hello " + name;
 }
-//fun();
+//console.log(greet("Meet"));
 
-
-// Anonymous Function.
-//function (){
-
-//}
-
-// Named Function Expression.
-let c = function two(){
- console.log("hello");
-}
-//c();
-
-// First Class Function.
-function hello(){
+//3. Function Expression.
+let mainfun = function(){
  console.log("Hello");
 }
-function main_hello(fn){
- console.log(fn);
-}
-main_hello(hello);
+//mainfun();
 
-// Arrow Function.
+//4. Anonymouse Functions.
+//setTimeout(function() {
+// console.log("Anonymous Function Executed in 2 Seconds..");
+//}, 2000);
 
+//5. First Class Functions.
+//When Functions treated as Values like Function as a varialbe,Function as a argument.
+
+//5.1 Function as a variable.
+//const Hello = function() {
+// console.log("Hello");
+//};
+//Hello();
+
+//5.2 Function as a argument.
+//function execute(fn) {
+// fn();
+//}
+//execute(function() {
+// console.log("Running...");
+//});
+
+//6. Higher Order Functions.
+//When Function pass as a argument in other function and return a functions in other function.
+
+//6.1 Function as a argument in other Function.
+//function calculate(a, b, operation) {
+// return operation(a, b);
+//}
+//function add(x, y) {
+// return x + y;
+//}
+//console.log(calculate(5, 3, add));
+
+//6.2 Returning a function in a function.
+//function multiplier(factor) {
+// return function(number) {
+//  return number * factor;
+// };
+//}
+//const double = multiplier(2);
+//console.log(double(5)); // 10
