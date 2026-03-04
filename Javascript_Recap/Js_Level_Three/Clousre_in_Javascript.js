@@ -1,16 +1,25 @@
 // Closure In Javascrip.
-function main_fun() {
+function outerFunction(){
  let count = 0;
- function sub_main() {
+ function innerFunction(){
   count++;
-  console.log(count);
+  console.log(`The Value Of Count Is ${count}`);
  }
- return sub_main;
+ return innerFunction;
 }
-let main_one = main_fun();
-// 1.
-main_one()
-// 2.
-main_one()
-// 3.
-main_one()
+let counterFunction = outerFunction();
+//counterFunction();
+//counterFunction();
+//counterFunction();
+
+function bankAccount(balance){
+ return function(amount){
+  balance += amount;
+  console.log(balance);
+ }
+}
+
+let deposit = bankAccount(5000);
+deposit(100);
+deposit(50);
+deposit(25);

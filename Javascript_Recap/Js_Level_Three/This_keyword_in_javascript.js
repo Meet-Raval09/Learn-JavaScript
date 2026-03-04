@@ -15,4 +15,4 @@ let user_obj = {name : "meet",age:23,info:function (){
 }};
 user_obj.info();
 
-//
+// Call();

@@ -1,6 +1,6 @@
 // Scope In Javascript.
 
-// Nested Scope.
+// Nested Function Scope.
 function one(){
  const user_name = "Meet";
  function two(){
@@ -8,12 +8,12 @@ function one(){
   console.log(user_name);
  }
  //console.log(user_lastname);
- //two();
+ two();
 }
 //one();
 
 // ++++++++++++++ Interesting Topic +++++++++++++.
-//console.log(addOne(1));
+console.log(addOne(1));
 function addOne(num){
  return num + 1;
 }
@@ -21,5 +21,5 @@ function addOne(num){
 let addTwo = function(num){
  return num + 2;
 }
-//console.log(addOne(1));
-//console.log(addTwo(2));
+console.log(addOne(1));
+console.log(addTwo(2));
