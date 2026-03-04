@@ -6,7 +6,9 @@ const code_lang = ["java","python","ruby","rust","go","c++","php"];
 
 // Filter() :
 const mynums = [10,20,30,40,50,60,70,80,90,10];
+//console.log("Orignal Array Befour Filter Method",mynums);
 const filtered_val = mynums.filter((num)=> num > 20);
+//console.log("Modified Array after Filter Method",mynums)
 //console.log(filtered_val)
 
 // map : 
@@ -22,8 +24,8 @@ let orders = [
 
 // Step 1: paid orders
 let paid = orders.filter(o => o.status === "paid");
+console.log(paid);
 
 // Step 2: total revenue
-let revenue = paid.reduce((sum,o)=>sum+o.price,0);
-
+let revenue = paid.reduce((sum,o)=>sum+o.price);
 console.log(revenue);

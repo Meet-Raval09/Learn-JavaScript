@@ -8,10 +8,11 @@ let user_one = [
 ]
 //console.log(user_one);
 //user_one.push({id:4,name:"elon",age:67});
+//user_one.push({id:6,name:"Elon",age:100});
 //console.log(user_one);
 
 // get data from database example.
-//let user_id = 2
+let user_id = 2
 //const uid = user_one.find(u => u.id === user_id);
 //console.log(uid);
 
@@ -37,12 +38,9 @@ user_one[index].name = "Updated";
 
 
 // 2. some = exit check.
-const exs = user_one.some(u => u.id == 5);
+//const exs = user_one.some(u => u.id == 5);
 //console.log(exs);
 
 // every = all check.
-const all_adult = user_one.every(u => u.age >= 20);
-console.log(all_adult);
-
-
-
+//const all_adult = user_one.every(u => u.age >= 20);
+//console.log(all_adult);

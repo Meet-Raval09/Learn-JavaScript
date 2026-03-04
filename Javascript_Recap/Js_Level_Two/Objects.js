@@ -4,21 +4,21 @@
 
 //object literals.
 let obj = {name:"meet",age:22,email:"themeetraval@gmail.com",ms:Symbol("smile")};
-// creating a symbol.
+//creating a symbol.
 //const symbol = Symbol("smile");
 //console.log(symbol);
 
 //accessing object values.
-//console.log(jsuser.name);
-//console.log(jsuser["email"]);
+//console.log(obj.name);
+//console.log(obj["email"]);
 //console.log(obj[ms]);
 //console.log(typeof obj.ms);
 
-// changing object values.
+//changing object values.
 //obj.email = "TheMeetraval21@gmail.com";
 //console.log(obj.email)
 
-// freezing object value.
+//freezing object value.
 //obj.name = "Jeff";
 //Object.freeze(obj);
 //obj.name = "Elon";
