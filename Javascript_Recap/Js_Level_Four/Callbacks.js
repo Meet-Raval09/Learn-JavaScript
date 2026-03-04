@@ -1,14 +1,14 @@
 // Callback hell,error first callbacks.
 
 // Callback In Javascript.
-//function sayHi(name,callback){
-// console.log("Hello" + name);
-// callback();
+function sayHi(name,callback){
+ console.log("Hello" + name);
+ callback();
 
-//}
-//sayHi("Meet",function(){
-// setTimeout(()=>{console.log("Callback excuted");},5000);
-//});
+}
+sayHi("Meet",function(){
+ setTimeout(()=>{console.log("Callback excuted");},5000);
+});
 
 // Error First Callback.
 function sayHi(name,callback){
