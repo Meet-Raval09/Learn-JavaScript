@@ -1,67 +1,95 @@
 // Class in Javascript.
-class Animal{
- constructor(name,voice,colour){ 
-  this.name = name
-  this.voice = voice
-  this.colour = colour
+class Programmer{
+ #salary
+ constructor(name,age,job_title,salary){
+  this.name = name;
+  this.age = age;
+  this.job_title = job_title;
+  this.#salary = salary
  }
- AnimalName(){
-  console.log(`the Animal Name Is ${this.name}`)
+ showInfo(){
+ console.log(`Programmer Name is ${this.name} and Age is ${this.age} and Job_title is ${this.job_title}`);
  }
- AnimalVoice(){
-  console.log(`the Animal Voice Is ${this.voice}`)
- }
- AnimalColour(){
-  console.log(`the Animal Colour Is ${this.colour}`)
- }
-}
-class Horse extends Animal{
- constructor(name,voice,colour,speed,isracing){
-  super(name,voice,colour);
-  this.speed = speed;
-  this.isracing = isracing;
- }
- HorseName(){
-  console.log(`The Horse Name is ${this.name}`);
- }
- HorseVoice(){
-  console.log(`The Horse Voice is ${this.voice}`);
- }
- HorseColour(){
-  console.log(`The Horse Colour is ${this.colour}`);
- }
- HorseSpeed(){
-  console.log(`The Horse Speed Is ${this.speed}`);
- }
- HorseIsRacing(){
-  console.log(`The Horse Is Racing ${this.isracing}`);
+ showSalary(){
+  console.log(`The Programmer Salary is ${this.#salary}`);
  }
 }
+class Coder extends Programmer{
+ constructor(name,age,salary,job_title,code_lang,shift_time){
+  super(name,age,job_title,salary);
+  this.code_lang = code_lang;class Programmer{
+ #salary
+ constructor(name,age,job_title,salary){
+  this.name = name;
+  this.age = age;
+  this.job_title = job_title;
+  this.#salary = salary
+ }
+ showInfo(){
+ console.log(`Programmer Name is ${this.name} and Age is ${this.age} and Job_title is ${this.job_title}`);
+ }
+ showSalary(){
+  console.log(`The Programmer Salary is ${this.#salary}`);
+ }
+}
+class Coder extends Programmer{
+ constructor(name,age,salary,job_title,code_lang,shift_time){
+  super(name,age,job_title,salary);
+  this.code_lang = code_lang;
+  this.shift_time = shift_time;
+ }
+ showSkills(){
+ console.log(`Coder Language ${this.code_lang} and Shift Time is ${this.shift_time}`);
+ }
+ showInfo(){
+  console.log(`Programmer Name is ${this.name} and Age is ${this.age} and Code_Lang is ${this.code_lang}`)
+ }
+ Work(){
+  this.#WriteCode();
+ }
+ #WriteCode(){
+  console.log(`Coder ${this.name} Write ${this.code_lang} Complex Code...!!`);
+ }
 
-//const Dog = new Animal("Bruno","Bhav bhav","Brown");
-//const DarkHorse = new Horse("Chetak","Hee","White","70KPH","Yes");
+}
+let Coder_One = new Coder("Elon",66,2200000,"CEO","Python","12hr");
+Coder_One.showInfo();
+Coder_One.showSkills();
+Coder_One.Work();
+Coder_One.showSalary();
+  this.shift_time = shift_time;
+ }
+ showSkills(){
+ console.log(`Coder Language ${this.code_lang} and Shift Time is ${this.shift_time}`);
+ }
+ showInfo(){
+  console.log(`Programmer Name is ${this.name} and Age is ${this.age} and Code_Lang is ${this.code_lang}`)
+ }
+ Work(){
+  this.#WriteCode();
+ }
+ #WriteCode(){
+  console.log(`Coder ${this.name} Write ${this.code_lang} Complex Code...!!`);
+ }
 
-//Dog.AnimalName()
-//Dog.AnimalVoice()
-//Dog.AnimalColour();
-
-//DarkHorse.HorseName();
-//DarkHorse.HorseVoice();
-//DarkHorse.HorseColour();
-//DarkHorse.HorseSpeed();
-//DarkHorse.HorseIsRacing();
+}
+let Coder_One = new Coder("Elon",66,2200000,"CEO","Python","12hr");
+Coder_One.showInfo();
+Coder_One.showSkills();
+Coder_One.Work();
+Coder_One.showSalary();
 
 // Class Constructor in Javascript.
-class CreateNewUser{
- constructor(username,email,password){
-  this.username = username;
-  this.email = email
-  this.password = password;
- }
- ShowUserInfo(){
- console.log(`the User Name is : ${this.username} and Email is ${this.email} and Password is ${this.password}`);
- }
-}
+//class CreateNewUser{
+// constructor(username,email,password){
+//  this.username = username;
+//  this.email = email
+//  this.password = password;
+// }
+// ShowUserInfo(){
+// console.log(`the User Name is : ${this.username} and Email is ${this.email} and Password is ${this.password}`);
+// }
+//}
 
 //const user_one = new CreateNewUser("Meet","rmeet2199@gmail.com","meet123");
 //user_one.ShowUserInfo();

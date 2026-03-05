@@ -16,33 +16,34 @@ a = 10
 // 2. Throw keyword = used to throw manual erros.
 //function checkAge(age){
 // if(age <= 18){
-//  throw  new Error("You Are Under Age...")
+//  throw new Error("You Are Under Age...")
+// }else{
+//  console.log("Allowed");
 // }
-// return "Allowed";
 //}
 //try{
-// checkAge(18);
+// checkAge(20);
 //}catch(err){
 // console.log("Sorry We Got An Error..",err.message);
 //}
 
 // 3. Custom Error.
-//class ValidationError extends Error {
-// constructor(message) {
-//  super(message);
-//  this.name = "ValidationError";
-// }
-//}
+class ValidationError extends Error {
+ constructor(message) {
+  super(message);
+  this.name = "ValidationError";
+ }
+}
 
-//function register(user) {
-// if(!user.name) {
-//  throw new ValidationError("Name required");
-// }
-//}
+function register(user) {
+ if(!user.name) {
+  throw new ValidationError("Name required");
+ }
+}
 
-//try {
-// register({});
-//} catch(err) {
-// console.log(err.name);
-// console.log(err.message);
-//}
+try {
+ register({});
+} catch(err) {
+ console.log(err.name);
+ console.log(err.message);
+}
